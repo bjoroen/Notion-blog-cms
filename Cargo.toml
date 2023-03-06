@@ -1,0 +1,22 @@
+[package]
+name = "notion_blog_engine"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+actix = "0.11.0"
+actix-rt = "2.2" # <-- Runtime for actix
+reqwest = {version = "0.11", features = ["blocking", "json"]}
+actix-web = "4"
+actix-files = "0.6"
+serde = {version = "^1", features = ["derive"]}
+serde_json = "1.0"
+env_logger = "0.8"
+log = "^0.4"
+dotenv = "0.15.0"
+dynfmt = "0.1.5"
+iso8601 = "0.5.1"
+
